@@ -1,10 +1,32 @@
-[gd_scene format=3 uid="uid://bd2824px2xh5b"]
+[gd_scene load_steps=3 format=3 uid="uid://b4d6om2u6kjy0"]
+
+[ext_resource type="FontFile" uid="uid://b4v0mxswj0oi2" path="res://fonts/SuperMario256.ttf" id="1_3krfo"]
+[ext_resource type="Texture2D" uid="uid://dhew6w0dqmslc" path="res://UI/Card X3.png" id="2_7bpl4"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="game_over" type="Label" parent="."]
-offset_left = 259.0
-offset_top = 66.0
-offset_right = 768.0
-offset_bottom = 294.0
-text = "pensaste mucho .... game over "
+offset_left = 136.0
+offset_top = 107.0
+offset_right = 645.0
+offset_bottom = 243.0
+theme_override_colors/font_color = Color(0.65894, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_3krfo")
+text = "tardaste en contestar ...
+game over
+
+VULVELO A INTENTAR  "
+
+[node name="CardX3" type="Sprite2D" parent="."]
+z_index = -15
+position = Vector2(403, 298)
+scale = Vector2(2.13602, 1.64021)
+texture = ExtResource("2_7bpl4")
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 264.0
+offset_top = 320.0
+offset_right = 512.0
+offset_bottom = 376.0
+metadata/_edit_lock_ = true

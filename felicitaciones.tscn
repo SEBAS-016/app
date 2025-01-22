@@ -1,10 +1,40 @@
-[gd_scene format=3 uid="uid://db77u3rypo821"]
+[gd_scene load_steps=4 format=3 uid="uid://fqa3caftnx4g"]
+
+[ext_resource type="Texture2D" uid="uid://dhew6w0dqmslc" path="res://UI/Card X3.png" id="1_rlpto"]
+[ext_resource type="FontFile" uid="uid://b4v0mxswj0oi2" path="res://fonts/SuperMario256.ttf" id="2_o8yrr"]
+[ext_resource type="Texture2D" uid="uid://r5go3qpmc0oc" path="res://UI/07.png" id="2_wksjg"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="felicitaciones" type="Label" parent="."]
-offset_left = 243.0
-offset_top = 92.0
-offset_right = 583.0
-offset_bottom = 216.0
-text = "felicidades :)"
+[node name="CardX3" type="Sprite2D" parent="."]
+position = Vector2(404, 300)
+scale = Vector2(2.15617, 1.67196)
+texture = ExtResource("1_rlpto")
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 200.0
+offset_top = 128.0
+offset_right = 568.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(1.2514e-06, 0.698406, 0.6082, 1)
+theme_override_colors/font_shadow_color = Color(0.158472, 0.158472, 0.158472, 1)
+theme_override_fonts/font = ExtResource("2_o8yrr")
+text = "felicitaciones 
+
+
+ pasaste al siguiente nivel "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="07" type="Sprite2D" parent="."]
+position = Vector2(240, 400)
+scale = Vector2(2.82258, 2.56452)
+texture = ExtResource("2_wksjg")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 320.0
+offset_top = 360.0
+offset_right = 520.0
+offset_bottom = 440.0
